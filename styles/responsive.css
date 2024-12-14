@@ -1,0 +1,54 @@
+@media only screen and (min-device-width: 1px) and (max-device-width: 600px) {
+    .my_common_screen {
+        width: 600px;
+        height: 2371px;
+       
+        
+    }
+    
+    
+    
+    .column_wrapper {
+        width: 600px;
+        height: 2270px;
+        
+        flex-direction: column;
+        
+    }
+
+    .column_1 {
+        
+        width: 500px;
+        height: 1767px;
+       
+    }
+    .column_2 {
+        
+        width: 500px;
+        height: 1331px;
+        
+    }
+
+    .worm_body_1 {
+        width: 600px;
+    }
+    .worm_body_1_head {
+        width: 600px;
+    }
+    .worm_body_2 {
+        width: 600px;
+    }
+    .worm_body_2_hand {
+        width: 600px;
+    }
+    
+    
+  }  /* iPhone */
+
+
+  @media only screen and (min-width: 1280px) {
+    .my_common_screen {
+       
+       /* background: url(../images/Macbook.png) no-repeat center top; opacity: 0.5;*/
+    }
+  }  /* Desktop */
