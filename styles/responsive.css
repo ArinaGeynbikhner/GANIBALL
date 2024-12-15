@@ -1,7 +1,7 @@
 @media only screen and (min-device-width: 1px) and (max-device-width: 600px) {
     .my_common_screen {
-        width: 375px;
-        height: 2500px;
+        width: 100%;
+        height: auto;
        
         
     }
@@ -18,7 +18,7 @@
     .column_2 {
         width: 90%; 
         height: auto; 
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center; 
         margin-top: 0; 
     }
@@ -27,7 +27,8 @@
     }
     .column_2 {
         z-index: 2;
-        margin-top: -48%;
+        margin-top: -40%;
+       
     
     }
     .worm_body_1 {
@@ -88,7 +89,7 @@
         width: 100%;
         height: auto; 
         object-fit: contain;
-        
+
     }
     .img_hand {
         object-fit: contain;
@@ -100,7 +101,7 @@
         height: 47px;
         width: 100%;
         background-color: pink; opacity: 0.5;
-        margin-top: 25%;
+        
        
     }
     .bubble {
@@ -110,7 +111,7 @@
         height: 47px;
         width: 100%;
         background-color: pink; opacity: 0.5;
-        margin-bottom: 20%;
+        
     }
    /* iPhone */
 
