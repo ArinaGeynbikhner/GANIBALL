@@ -1,54 +1,123 @@
 @media only screen and (min-device-width: 1px) and (max-device-width: 600px) {
     .my_common_screen {
-        width: 600px;
-        height: 2371px;
+        width: 375px;
+        height: 2500px;
        
         
     }
-    
-    
     
     .column_wrapper {
-        width: 600px;
-        height: 2270px;
         
-        flex-direction: column;
+        width: 100%;
+        flex-direction: column; 
+        align-items: center; 
         
     }
 
+    .column_1,
+    .column_2 {
+        width: 90%; 
+        height: auto; 
+        justify-content: center;
+        align-items: center; 
+        margin-top: 0; 
+    }
     .column_1 {
-        
-        width: 500px;
-        height: 1767px;
-       
+        z-index: 1;
     }
     .column_2 {
-        
-        width: 500px;
-        height: 1331px;
-        
+        z-index: 2;
+        margin-top: -48%;
+    
     }
-
     .worm_body_1 {
-        width: 600px;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        position: relative;
+        background: url() no-repeat center top;
+        background-color: chartreuse; opacity: 0.5;
+        background-size: cover; 
+        overflow: hidden;
     }
     .worm_body_1_head {
-        width: 600px;
+        width: 87%;
+        height: auto;
+        object-fit: cover;
+        margin-top: -2%;
+        position: relative;
+        z-index: 1;
     }
     .worm_body_2 {
-        width: 600px;
+        width: 95%;
+        height: auto;
+        text-align: center;
+        position: relative;
+        background: url() no-repeat center top;
+        background-color: chartreuse; opacity: 0.5;
+        background-size: cover; 
+        overflow: hidden;
+       
     }
     .worm_body_2_hand {
-        width: 600px;
+        width: 89%;
+        height: auto;
+        text-align: center;
+        position: relative;
+        background: url() no-repeat center top;
+        background-color: chartreuse; opacity: 0.5;
+        background-size: cover; 
+        overflow: hidden;
+        margin-left: 4%;
+
     }
+    .img_body_1 {
+        width: 100%;
+        height: auto;
+        object-fit: contain; 
+
+    }
+    .img_head {
+        object-fit: contain;
+        height: auto;
+        width: 100%;
+        object-position: left center;
     
-    
-  }  /* iPhone */
+    }
+    .img_body_2 {
+        width: 100%;
+        height: auto; 
+        object-fit: contain;
+        
+    }
+    .img_hand {
+        object-fit: contain;
+        height: auto;
+        width: 100%;
+        object-position: left center;
+    }
+    .text_block_2 {
+        height: 47px;
+        width: 100%;
+        background-color: pink; opacity: 0.5;
+        margin-top: 25%;
+       
+    }
+    .bubble {
+        margin-top: 10%;
+    }
+    .text_block_1 {
+        height: 47px;
+        width: 100%;
+        background-color: pink; opacity: 0.5;
+        margin-bottom: 20%;
+    }
+   /* iPhone */
 
 
   @media only screen and (min-width: 1280px) {
     .my_common_screen {
        
-        background: url(../images/Macbook.png) no-repeat center top; opacity: 0.5;
+       /* background: url(../images/Macbook.png) no-repeat center top; opacity: 0.5;*/
     }
   }  /* Desktop */
