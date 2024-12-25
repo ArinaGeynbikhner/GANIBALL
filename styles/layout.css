@@ -87,8 +87,6 @@ body {
 }
 
 .img_body_1 {
-    /* object-fit: cover; */
-    /* height: 1767px; */
     width: 100%;
     align-items: center;
     z-index: 1;
@@ -96,7 +94,6 @@ body {
 }
 
 .worm_body_1_head {
-
     width: 90%;
     position: relative;
     background: url() no-repeat center top;
@@ -115,12 +112,12 @@ body {
     object-fit: cover;
     width: 100%;
     object-position: left center;
+    right: 5%
 
 }
 
 .worm_body_2 {
-    height: 1331px;
-    width: 487px;
+    width: 100%;
     background-color: chartreuse;
     opacity: 0.5;
     z-index: 1; /* Нижний слой */
@@ -132,22 +129,19 @@ body {
 
 .img_body_2 {
     object-fit: cover;
-    height: 1331px;
-    width: 487px;
+    width: 100%;
     align-items: center;
 }
 
 .img_hand {
     object-fit: cover;
-    height: 262px;
-    width: 442px;
+    width: 100%;
     align-items: center;
     margin-left: 1.5%; 
     margin-bottom: 0%;
 }
 
 .worm_body_2_hand {
-    height: 262px;
     width: 100%;
     margin-top: -5%;
     background-color: rgb(255, 0, 13);
@@ -186,4 +180,46 @@ body {
     top: 43.9%;
     left: 5%; 
     z-index: 3; 
+}
+.img_heads {
+    width: 95%;
+    position: absolute;
+    top: 61%;
+    left: 2.4%; 
+    z-index: 2; 
+}
+.img_spider {
+    width: 42%;
+    position: absolute;
+    top: 80%;
+    left: 33%; 
+    z-index: 3; 
+}
+.img_rats_2 {
+    width: 89%;
+    position: absolute;
+    top: 93%;
+    left: 4.3%; 
+    z-index: 2;  
+}
+.img_mouth {
+    position: absolute; /* Позволяет расположить элемент поверх других */
+    top: 5.5%; /* Устанавливает вертикальную позицию (регулируйте по необходимости) */
+    right: 18%; /* Устанавливает горизонтальную позицию (регулируйте по необходимости) */
+    width: 21%; /* Размер mouth относительно worm_body_2 */
+    z-index: 2; /* Устанавливает уровень наслоения поверх других элементов */
+}
+.img_newborns {
+    position: absolute; /* Позволяет расположить элемент поверх других */
+    top: 31.8%; /* Устанавливает вертикальную позицию (регулируйте по необходимости) */
+    right: 6%; /* Устанавливает горизонтальную позицию (регулируйте по необходимости) */
+    width: 33%; /* Размер mouth относительно worm_body_2 */
+    z-index: 3; /* Устанавливает уровень наслоения поверх других элементов */
+}
+.img_eyes{
+    position: absolute; /* Позволяет расположить элемент поверх других */
+    top: 53%; /* Устанавливает вертикальную позицию (регулируйте по необходимости) */
+    right: 9%; /* Устанавливает горизонтальную позицию (регулируйте по необходимости) */
+    width: 30%; /* Размер mouth относительно worm_body_2 */
+    z-index: 3; /* Устанавливает уровень наслоения поверх других элементов */   
 }

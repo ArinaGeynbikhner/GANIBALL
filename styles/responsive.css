@@ -28,8 +28,12 @@
     .column_2 {
         z-index: 2;
         margin-top: -40%;
-       
-    
+    }
+
+    .worm_body_2 {
+        width: 100%;
+        height: auto;
+        position: relative;
     }
     .worm_body_1 {
         width: 100%;
