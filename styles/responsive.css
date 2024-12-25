@@ -27,16 +27,10 @@
     }
     .column_2 {
         z-index: 2;
-        margin-top: -40%;
-    }
-
-    .worm_body_2 {
-        width: 100%;
-        height: auto;
-        position: relative;
+        margin-top: -60%;
     }
     .worm_body_1 {
-        width: 100%;
+        width: 98%;
         height: auto;
         text-align: center;
         position: relative;
@@ -45,14 +39,7 @@
         background-size: cover; 
         overflow: hidden;
     }
-    .worm_body_1_head {
-        width: 87%;
-        height: auto;
-        object-fit: cover;
-        margin-top: -2%;
-        position: relative;
-        z-index: 1;
-    }
+
     .worm_body_2 {
         width: 95%;
         height: auto;
@@ -62,7 +49,6 @@
         background-color: chartreuse; opacity: 0.5;
         background-size: cover; 
         overflow: hidden;
-       
     }
     .worm_body_2_hand {
         width: 89%;
@@ -80,20 +66,34 @@
         width: 100%;
         height: auto;
         object-fit: contain; 
-
     }
     .img_head {
         object-fit: contain;
         height: auto;
         width: 100%;
         object-position: left center;
-    
+    }
+    .worm_morda {
+        visibility: hidden;
+    }
+    .worm_morda2{
+        visibility: visible;
+        width: 63%;
+        height: auto;
+        position: absolute;
+        top: 12.9%;
+        left: 36%;
+        z-index: 4;
+    }
+    .img_morda2 {
+        width: 100%;
+        height: auto;
+        object-fit: cover
     }
     .img_body_2 {
         width: 100%;
         height: auto; 
         object-fit: contain;
-
     }
     .img_hand {
         object-fit: contain;
@@ -105,8 +105,6 @@
         height: 47px;
         width: 100%;
         background-color: pink; opacity: 0.5;
-        
-       
     }
     .bubble {
         margin-top: 10%;
@@ -116,6 +114,9 @@
         width: 100%;
         background-color: pink; opacity: 0.5;
         
+    }
+    .worm_finger {
+        visibility: hidden;
     }
 }
    /* iPhone */
