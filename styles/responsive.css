@@ -35,7 +35,6 @@
         text-align: center;
         position: relative;
         background: url() no-repeat center top;
-        background-color: chartreuse; opacity: 0.5;
         background-size: cover; 
         overflow: hidden;
     }
@@ -46,7 +45,6 @@
         text-align: center;
         position: relative;
         background: url() no-repeat center top;
-        background-color: chartreuse; opacity: 0.5;
         background-size: cover; 
         overflow: hidden;
     }
@@ -57,7 +55,6 @@
         text-align: center;
         position: relative;
         background: url() no-repeat center top;
-        background-color: chartreuse; opacity: 0.5;
         background-size: cover; 
         overflow: hidden;
         margin-left: 4%;
@@ -102,7 +99,6 @@
         position: relative;
         height: auto;
         width: 85%;
-        background-color: chartreuse;
         opacity: 0.5;
         z-index: 2; /* Нижний слой */
         display: flex;
@@ -116,7 +112,6 @@
         position: relative;
         height: auto;
         width: 61%;
-        background-color: chartreuse;
         opacity: 0.5;
         z-index: 3;
         display: flex;
@@ -129,7 +124,6 @@
         position: relative;
         height: auto;
         width: 83%;
-        background-color: chartreuse;
         opacity: 0.5;
         z-index: 2; /* Нижний слой */
         display: flex;
