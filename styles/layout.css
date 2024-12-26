@@ -158,12 +158,226 @@ body {
     background-color: pink; opacity: 0.5;
     margin-top: 4.3%;
 }
-.img_faceseyeball {
-    width: 74%;
+.eyesandhands {
+    background-color: aqua; 
+}
+
+.img_eyeball {
+    width: 45%;
+    position:absolute;
+    top: 5%;
+    left: 37%;
+    z-index: 6;
+}
+.img_zrachok {
+    width: 8%;
+    position:absolute;
+    top: 12.2%;
+    left: 55%;
+    z-index: 7;
+}
+.img_face_foreground_1 {
+    width: 15%;
+    position:absolute;
+    top: 15%;
+    left: 29%;
+    z-index: 7; 
+}
+.img_face_foreground_2 {
+    width: 15%;
+    position:absolute;
+    top: 16%;
+    left: 74%;
+    z-index: 7; 
+}
+.img_face_foreground_3{
+    width: 15%;
+    position:absolute;
+    top: 12%;
+    left: 79%;
+    z-index: 6; 
+}
+.img_face_foreground_4{
+    width: 14%;
+    position:absolute;
+    top: 8%;
+    left: 78%;
+    z-index: 5; 
+}
+.img_face_foreground_5 {
+    width: 14%;
+    position:absolute;
+    top: 3.5%;
+    left: 68%;
+    z-index: 2; 
+}
+.img_face_foreground_6 {
+    width: 14%;
+    position:absolute;
+    top: 3.9%;
+    left: 57%;
+    z-index: 2; 
+}
+.img_face_foreground_7 {
+    width: 15%;
+    position:absolute;
+    top: 2.4%;
+    left: 39%;
+    z-index: 4; 
+}
+.img_face_foreground_8 {
+    width: 15%;
+    position:absolute;
+    top: 5.1%;
+    left: 32.5%;
+    z-index: 5; 
+}
+.img_face_foreground_9{
+    width: 15%;
+    position:absolute;
+    top: 10%;
+    left: 26%;
+    z-index: 6;   
+}
+.img_face_foreground_10{
+    width: 15%;
+    position:absolute;
+    top: 19.7%;
+    left: 38%;
+    z-index: 5;   
+}
+.img_face_foreground_11{
+    width: 15%;
+    position:absolute;
+    top: 20.7%;
+    left: 51%;
+    z-index: 4;   
+}
+.img_face_foreground_12{
+    width: 15%;
+    position:absolute;
+    top: 19.7%;
+    left: 64%;
+    z-index: 5;   
+}
+.img_face_foreground_13{
+    width: 15%;
+    position:absolute;
+    top: 20%;
+    left: 71%;
+    z-index: 4;   
+}
+.img_face_foreground_14{
+    width: 15%;
+    position:absolute;
+    top: 20.8%;
+    left: 79%;
+    z-index: 7;   
+}
+.img_face_foreground_15{
+    width: 15%;
+    position:absolute;
+    top: 18.2%;
+    left: 81%;
+    z-index: 4;   
+}
+.img_face_foreground_16{
+    width: 15%;
+    position:absolute;
+    top: 16%;
+    left: 80%;
+    z-index: 3;   
+}
+.img_face_foreground_17{
+    width: 14%;
+    position:absolute;
+    top: 9%;
+    left: 80%;
+    z-index: 4;   
+}
+.img_face_foreground_18{
+    width: 15%;
+    position:absolute;
+    top: 5%;
+    left: 80.5%;
+    z-index: 3;   
+}
+.img_face_foreground_19{
+    width: 14%;
     position:absolute;
     top: 1%;
-    left: 21.4%;
-    z-index: 3;
+    left: 67%;
+    z-index: 1;   
+}
+.img_face_foreground_20{
+    width: 16%;
+    position:absolute;
+    top: 1.9%;
+    left: 78%;
+    z-index: 1;   
+}
+.img_face_foreground_21{
+    width: 16%;
+    position:absolute;
+    top: 0.8%;
+    left: 47%;
+    z-index: 1;   
+}
+.img_face_foreground_22{
+    width: 16%;
+    position:absolute;
+    top: 2.2%;
+    left: 29%;
+    z-index: 2;   
+}
+.img_face_foreground_23{
+    width: 14%;
+    position:absolute;
+    top: 1.7%;
+    left: 22%;
+    z-index: 3;   
+}
+.img_face_foreground_24{
+    width: 14%;
+    position:absolute;
+    top: 5%;
+    left: 25%;
+    z-index: 3;   
+}
+.img_face_foreground_25{
+    width: 15%;
+    position:absolute;
+    top: 12%;
+    left: 23%;
+    z-index: 3;   
+}
+.img_face_foreground_26{
+    width: 16%;
+    position:absolute;
+    top: 17%;
+    left: 21.5%;
+    z-index: 3;   
+}
+.img_face_foreground_27{
+    width: 16%;
+    position:absolute;
+    top: 21.2%;
+    left: 23%;
+    z-index: 3;   
+}
+.img_face_foreground_28{
+    width: 16%;
+    position:absolute;
+    top: 19.5%;
+    left: 29%;
+    z-index: 2;   
+}
+.img_face_foreground_29{
+    width: 14%;
+    position:absolute;
+    top: 1.5%;
+    left: 57%;
+    z-index: 1;   
 }
 .img_hands {
     width: 94%;
@@ -172,6 +386,7 @@ body {
     left: 2.8%;
     z-index: 2;
 }
+
 .img_rats {
     width: 88%;
     position: absolute;
@@ -179,6 +394,7 @@ body {
     left: 5%; 
     z-index: 3; 
 }
+
 .img_heads {
     width: 95%;
     position: absolute;
@@ -201,21 +417,20 @@ body {
     z-index: 2;  
 }
 .img_mouth {
-    position: absolute; /* Позволяет расположить элемент поверх других */
-    top: 1.4%; /* Устанавливает вертикальную позицию (регулируйте по необходимости) */
-    right: 37%; /* Устанавливает горизонтальную позицию (регулируйте по необходимости) */
-    width: 60%; /* Размер mouth относительно worm_body_2 */
-    z-index: 2; /* Устанавливает уровень наслоения поверх других элементов */
+    position: absolute;
+    top: 1.4%;
+    right: 37%;
+    width: 60%;
+    z-index: 2; 
 }
 
 .img_newborns {
     position: absolute;
-    top: 48.2%;
-    right: 0%;
+    top: 49%;
+    left: 5%;
     width: 91%;
     z-index: 3;
     display: inline-block;
-    padding: 10px 20px;
     animation: shake 0.3s infinite;
 }
 @keyframes shake {
@@ -263,24 +478,23 @@ body {
 .worm_body_hand{
     position: relative;
     height: auto;
-    width: 87%;
+    width: 91%;
     z-index: 2; /* Нижний слой */
     display: flex;
     align-items: flex-start;
-    margin-right: % ;
 }
 .img_wormhand {
     object-fit: cover;
     width: 100%;
-    margin-left: 2.3%; 
-    margin-top: -5%;
+    margin-left: 1.9%; 
+    margin-top: -6%;
 }
 .wormhead2 {
     visibility: hidden;
     position: relative;
     height: auto;
     width: 85%;
-    z-index: 2; /* Нижний слой */
+    z-index: 2;
     display: flex;
     align-items: flex-start;
     left: 1.2%;
