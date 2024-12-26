@@ -133,9 +133,9 @@
 }
 .img_newborns {
     position: absolute;
-    top: 48.2%;
-    right: 0%;
-    width: 88%;
+    top: 49%;
+    left: 5%;
+    width: 92%;
     z-index: 3;
     display: inline-block;
     animation: shake 0.3s infinite;
