@@ -204,7 +204,7 @@ body {
     transition: transform 0.3s ease; /* Плавность для всех элементов */
 }
 .hover-scale:hover {
-    transform: scale(1.1); /* Увеличение при наведении */
+    transform: scale(1.2); /* Увеличение при наведении */
 }
 .img_face_foreground_2 {
     width: 15%;
@@ -557,9 +557,9 @@ body {
 }
 .img_eye_8 {
     position: absolute;
-    top: 90%;
+    top: 91%;
     right: 45%;
-    width: 13%;
+    width: 11%;
     z-index: 4; 
 }
 .img_eye_9 {
@@ -639,7 +639,12 @@ body {
     width: 10%;
     z-index: 2; 
 }
-
+.hover-rotate {
+    transition: transform 0.3s ease; /* Плавность для всех элементов */
+}
+.hover-rotate:hover {
+    transform: rotate(360deg) scale(1.1); /* Увеличение при наведении */
+}
 .worm_body_hand{
     position: relative;
     height: auto;
@@ -674,9 +679,35 @@ body {
 }
 
 .img_mask {
-    width: 43%;
-    position:absolute;
-    top: 22%;
-    left: 52%;
-    z-index: 2; 
+    width: 19%;
+    top: 81%;
+    left: 27.5%;
+    position: absolute;
+    z-index: 3; 
+    animation: rolldown 2s ease-out;
+    animation-delay: 0;
+    animation-play-state: paused;
+
 }
+.animate {
+    transform: translateY(0);
+    transition: all 2s ease-out;
+  }
+  
+  @keyframes rolldown {
+      0% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+
+      100% {
+        transform: translateY(50%);
+        opacity: 1;
+      }
+    }
+
+  .img_mask:hover {
+    animation: сползание вниз 2s forwards;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+  }
