@@ -426,12 +426,36 @@ body {
     z-index: 2; 
 }
 .img_spider {
-    width: 42%;
+    width: 40%;
     position: absolute;
     top: 80%;
     left: 33%; 
-    z-index: 3; 
+    z-index: 3;
+    transition: transform 0.3s ease; 
 }
+.img_spider:hover {
+    animation: wave-motion 5s ease-in-out infinite; /* Включение анимации при наведении */
+  }
+  @keyframes wave-motion {
+    0% {
+      transform: translate(0, 0); /* Начальная точка */
+    }
+    20% {
+      transform: translate(-10%, 5%); /* Вверх и влево */
+    }
+    40% {
+      transform: translate(-20%, 0); /* Крайняя левая точка */
+    }
+    60% {
+      transform: translate(-10%, -5%); /* Вверх и вправо */
+    }
+    80% {
+      transform: translate(10%, 5%); /* Вниз и вправо */
+    }
+    100% {
+      transform: translate(0, 0); /* Возврат в начальную точку */
+    }
+  }
 .img_rats_2 {
     width: 89%;
     position: absolute;
