@@ -152,15 +152,15 @@
     animation: line2 4s infinite linear;
 }
 .text_block_2-content {
-    font-size: 2em;
+    font-size: 1em;
 }
 .text_block_1-content {
-    font-size: 2em;
+    font-size: 1em;
 }
 .text_block_1 {
     height: 2em;
 .text_block_2 {
-    height: 2vw;
+    height: 2em;
 }
    /* iPhone */
 

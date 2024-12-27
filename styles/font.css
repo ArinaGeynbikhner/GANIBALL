@@ -1,8 +1,8 @@
 @font-face {
     font-family: 'helvetica_bold'; 
-    src: url(../fonts/helvetica_bold.otf);
+    src: url(./fonts/helvetica_bold.otf);
 }
 @font-face {
     font-family: 'helvetica_regular'; 
-    src: url(../fonts/helvetica_regular.otf);
+    src: url(./fonts/helvetica_regular.otf);
 }
