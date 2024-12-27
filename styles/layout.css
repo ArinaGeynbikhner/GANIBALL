@@ -631,7 +631,100 @@ body {
     position: absolute;
     top: 61%;
     left: 2.4%; 
-    z-index: 2; 
+    z-index: 3; 
+}
+.img_twin_head {
+    width: 44.3%;
+    position: absolute;
+    top: 63.4%;
+    left: 27.5%; 
+    z-index: 2;  
+    opacity: 0; /* Начальная непрозрачность */
+    transition: opacity 0.5s ease; 
+    animation: levitate 6s infinite ease-in-out;
+}
+@keyframes fadeInOut {
+    0% {
+        opacity: 0; /* Прозрачность 0% */
+    }
+    50% {
+        opacity: 1; /* Прозрачность 100% (полностью видимое) */
+    }
+    100% {
+        opacity: 0; /* Прозрачность снова 0% */
+    }
+}
+
+.img_closedeyes:hover ~ .img_twin_head {
+    animation: fadeInOut 5s infinite alternate; /* Применяем анимацию только при ховере */
+}
+.img_twin_head2 {
+    width: 44.3%;
+    position: absolute;
+    top: 63.4%;
+    left: 27.5%; 
+    z-index: 1;
+    animation: levitate 4s infinite ease-in-out; 
+}
+@keyframes levitate {
+    0% {
+        transform: translate(0, 0); /* Начальное положение */
+    }
+    25% {
+        transform: translate(0.7%, -0.7%); /* Верхний правый угол */
+    }
+    50% {
+        transform: translate(-0.7%, 0.7%); /* Верхний левый угол */
+    }
+    100% {
+        transform: translate(0, 0); /* Возврат в начальную точку */
+    }
+}
+.img_closedeyes {
+    width: 95%;
+    position: absolute;
+    top: 61%;
+    left: 2.4%; 
+    z-index: 5;
+    animation: fadeInOut 5s infinite alternate;
+        }
+
+        @keyframes fadeInOut {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        } 
+.img_innert_heads {
+    width: 53.4%;
+    position: absolute;
+    top: 62%;
+    left: 23%; 
+    z-index: 4; 
+    animation: fadeInOut2 5s infinite alternate;
+}
+@keyframes fadeInOut2 {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+} 
+.img_innert_heads_blue {
+    width: 53.4%;
+    position: absolute;
+    top: 62%;
+    left: 23%; 
+    z-index: 3; 
 }
 .img_spider {
     width: 42%;
@@ -680,21 +773,16 @@ body {
     width: 60%;
     z-index: 2; 
 }
+/* Стиль для картинки с языком */
 .img_mouth2 {
     position: absolute;
     top: 6.5%;
     right: 37.7%;
     width: 52.5%;
     z-index: 2;
-    animation: tongueout 2s ease-out;
-    animation-delay: 0;
-    animation: tongueout 2s ease-out infinite;  /* Анимация повторяется бесконечно */
-    animation-play-state: paused;  /* По умолчанию анимация приостановлена */
-}
-
-.animate {
-    transform: translateX(0);
-    transition: all 2s ease-out;
+    
+    /* Постоянная анимация: вертикальная тряска */
+    animation: shakeVertically 0.5s ease-in-out infinite;
 }
 
 @keyframes tongueout {
@@ -703,19 +791,40 @@ body {
         opacity: 1;
     }
     50% {
-        transform: translateX(10%);
+        transform: translateX(5%);
         opacity: 1;
     }
     100% {
         transform: translateX(0%);
         opacity: 1;
     }
-
 }
 
+@keyframes shakeVertically {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-5px); /* Сдвиг вверх */
+    }
+    50% {
+        transform: translateY(5px);  /* Сдвиг вниз */
+    }
+    75% {
+        transform: translateY(-5px); /* Сдвиг вверх */
+    }
+    100% {
+        transform: translateY(0);   /* Возвращаем в исходное положение */
+    }
+}
+
+/* Анимация при ховере: запуск анимации сдвига по горизонтали */
 .img_mouth3:hover + .img_mouth2 {
-    animation-play-state: running;  /* Запускаем анимацию */
+    animation: shakeVertically 0.5s ease-in-out infinite, tongueout 2s ease-out forwards; /* Запускаем обе анимации */
+    animation-play-state: running; /* Запускаем обе анимации при ховере */
 }
+
+
 .img_mouth3 {
     position: absolute;
     top: 4%;
