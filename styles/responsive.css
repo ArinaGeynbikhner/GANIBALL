@@ -84,7 +84,7 @@
     .text_block_2 {
         height: 47px;
         width: 100%;
-        background-color: pink; opacity: 0.5;
+
     }
     .bubble {
         margin-top: 10%;
@@ -92,7 +92,7 @@
     .text_block_1 {
         height: 47px;
         width: 100%;
-        background-color: pink; opacity: 0.5;
+
     }
     .wormhead2 {
         visibility: visible;
@@ -139,11 +139,28 @@
     animation: shake 0.3s infinite;
 }
 .img_mask {
-    width: 41%;
-    top: 74%;
-    left: 41.5%;
-    position: absolute;
-
+    visibility: hidden;
+}
+.text_block_ganiball {
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0%;
+    text-transform: uppercase;
+    animation: line2 4s infinite linear;
+}
+.text_block_2-content {
+    font-size: 2em;
+}
+.text_block_1-content {
+    font-size: 2em;
+}
+.text_block_1 {
+    height: 2em;
+.text_block_2 {
+    height: 2vw;
 }
    /* iPhone */
 

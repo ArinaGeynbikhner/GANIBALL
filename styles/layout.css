@@ -66,30 +66,35 @@ body {
 }
 
 .text_block_1 {
-    height: 3vw;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 3em;
     width: 100%;
     background-color: rgba(255, 126, 175, 1);
     overflow: hidden;
+}
+.text_block_fear {
     white-space: nowrap;
-    box-sizing: border-box;
-    color: rgba(223, 0, 6, 1);
-    padding: 0.3%;
-    font-size: 30px;
-    font-family: Helvetica_bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    text-transform: uppercase;
+    animation: line 10s infinite linear;
 }
 .text_block_1-content {
-    display: inline-block;
-    white-space: nowrap;
-    animation: marquee 10s linear infinite;
+    color: rgba(223, 0, 6, 1);
+    font-size: 3em;
+    font-family: Helvetica_bold;
+    margin-right: 0.5%;
 }
-@keyframes marquee {
-    from {
-      transform: translateX(100%);
-    }
-    to {
-      transform: translateX(-50%);
-    }
-  }
+@keyframes line {
+    0%{transform: translate(-10%,0);}
+    100%{transform: translate(-40%,0);}
+}
 .worm_body_1 {
     width: 98%;
     text-align: center;
@@ -153,13 +158,36 @@ body {
 }
 
 .text_block_2 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
     height: 3vw;
     width: 100%;
-    background-color: pink; opacity: 0.5;
-    margin-top: 4.3%;
+    background-color: rgba(255, 126, 175, 1);
+    overflow: hidden;
+    margin-top: 4%;
 }
-.eyesandhands {
-    background-color: aqua; 
+.text_block_ganiball {
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.3%;
+    text-transform: uppercase;
+    animation: line2 4s infinite linear;
+}
+.text_block_2-content {
+    color: rgba(223, 0, 6, 1);
+    font-size: 3em;
+    font-family: Helvetica_bold;
+    margin-right: 1%;
+}
+@keyframes line2 {
+    0%{transform: translate(-10%,0);}
+    100%{transform: translate(-40%,0);}
 }
 
 .img_eyeball {
@@ -1111,7 +1139,7 @@ body {
     transition: all 2s ease-out;
   }
 
-  @keyframes rolldown {
+   @keyframes rolldown {
       0% {
         transform: translateY(0);
         opacity: 1;
@@ -1121,7 +1149,7 @@ body {
         transform: translateY(50%);
         opacity: 1;
       }
-    }
+    } 
 
   .img_mask:hover {
     animation: сползание вниз 2s forwards;
