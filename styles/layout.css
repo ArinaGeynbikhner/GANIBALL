@@ -410,14 +410,222 @@ body {
     z-index: 1;
 }
 
-.img_rats {
-    width: 88%;
+.img_rat1 {
+    width: 28%;
     position: absolute;
-    top: 43.9%;
+    top: 45.7%;
     left: 5%; 
     z-index: 3; 
 }
+.img_rat2 {
+    width: 28%;
+    position: absolute;
+    top: 45.7%;
+    left: 34%; 
+    z-index: 3; 
+}
+.img_rat3 {
+    width: 28%;
+    position: absolute;
+    top: 45.7%;
+    left: 63%; 
+    z-index: 3; 
+}
+.img_tonels {
+    width: 88.3%;
+    position: absolute;
+    top: 43.9%;
+    left: 4.8%; 
+    z-index: 2;
+}
+@keyframes runningText1 {
+    0% {
+        left: 0%;
+        opacity: 0;
+    }
+    33% {
+        left: 30%; /* Начало движения */
+        opacity: 1;
+    }
+    66% {
+        left: 65%; /* Промежуточное положение */
+        opacity: 0;
+    }
+    100% {
+        left: 100%;
+        opacity: 0;
+    }
+}
 
+@keyframes runningText2 {
+    0% {
+        left: 0%;
+        opacity: 0;
+    }
+    33% {
+        left: 30%;
+        opacity: 1;
+    }
+    66% {
+        left: 65%;
+        opacity: 0;
+    }
+    100% {
+        left: 100%;
+        opacity: 0;
+    }
+}
+
+@keyframes runningText3 {
+    0% {
+        left: 0%;
+        opacity: 0;
+    }
+    33% {
+        left: 30%;
+        opacity: 1;
+    }
+    66% {
+        left: 65%;
+        opacity: 0;
+    }
+    100% {
+        left: 100%;
+        opacity: 0;
+    }
+}
+.img_rat1, .img_rat2, .img_rat3 {
+    position: absolute;
+    width: 28%;
+    top: 45.7%;
+    z-index: 3;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    opacity: 0;
+}
+
+.img_rat1 {
+    animation-name: runningText1;
+    animation-delay: 0s;
+}
+
+.img_rat2 {
+    animation-name: runningText2;
+    animation-delay: 1s;
+}
+
+.img_rat3 {
+    animation-name: runningText3;
+    animation-delay: 2s;
+}
+.img_rat1_1{
+    width: 28%;
+    position: absolute;
+    top: 94.5%;
+    left: 5%; 
+    z-index: 3; 
+}
+.img_rat2_1{
+    width: 28%;
+    position: absolute;
+    top: 94.5%;
+    left: 35%; 
+    z-index: 3; 
+}
+.img_rat3_1{
+    width: 28%;
+    position: absolute;
+    top: 94.5%;
+    left: 64%; 
+    z-index: 3; 
+}
+.img_tonels_1{
+    width: 88.3%;
+    position: absolute;
+    top: 93%;
+    left: 4.0%; 
+    z-index: 2; 
+}
+@keyframes runningText1_1 {
+    0% {
+        left: 0%;
+        opacity: 0;
+    }
+    33% {
+        left: 30%; /* Начало движения */
+        opacity: 1;
+    }
+    66% {
+        left: 65%; /* Промежуточное положение */
+        opacity: 0;
+    }
+    100% {
+        left: 100%;
+        opacity: 0;
+    }
+}
+
+@keyframes runningText2_1 {
+    0% {
+        left: 0%;
+        opacity: 0;
+    }
+    33% {
+        left: 30%;
+        opacity: 1;
+    }
+    66% {
+        left: 65%;
+        opacity: 0;
+    }
+    100% {
+        left: 100%;
+        opacity: 0;
+    }
+}
+
+@keyframes runningText3_1 {
+    0% {
+        left: 0%;
+        opacity: 0;
+    }
+    33% {
+        left: 30%;
+        opacity: 1;
+    }
+    66% {
+        left: 65%;
+        opacity: 0;
+    }
+    100% {
+        left: 100%;
+        opacity: 0;
+    }
+}
+.img_rat1_1, .img_rat2_1, .img_rat3_1 {
+    position: absolute;
+    z-index: 3;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    opacity: 0;
+}
+
+.img_rat1_1 {
+    animation-name: runningText1;
+    animation-delay: 0s;
+}
+
+.img_rat2_1 {
+    animation-name: runningText2;
+    animation-delay: 1s;
+}
+
+.img_rat3_1 {
+    animation-name: runningText3;
+    animation-delay: 2s;
+}
 .img_heads {
     width: 95%;
     position: absolute;
@@ -471,6 +679,49 @@ body {
     right: 37%;
     width: 60%;
     z-index: 2; 
+}
+.img_mouth2 {
+    position: absolute;
+    top: 6.5%;
+    right: 37.7%;
+    width: 52.5%;
+    z-index: 2;
+    animation: tongueout 2s ease-out;
+    animation-delay: 0;
+    animation: tongueout 2s ease-out infinite;  /* Анимация повторяется бесконечно */
+    animation-play-state: paused;  /* По умолчанию анимация приостановлена */
+}
+
+.animate {
+    transform: translateX(0);
+    transition: all 2s ease-out;
+}
+
+@keyframes tongueout {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(10%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+
+}
+
+.img_mouth3:hover + .img_mouth2 {
+    animation-play-state: running;  /* Запускаем анимацию */
+}
+.img_mouth3 {
+    position: absolute;
+    top: 4%;
+    right: 44.5%;
+    width: 43%;
+    z-index: 3;  
 }
 
 .img_newborns {

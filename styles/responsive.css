@@ -140,13 +140,9 @@
 }
 .img_mask {
     width: 41%;
-    top: 74.3%;
+    top: 74%;
     left: 41.5%;
     position: absolute;
-    z-index: 3; 
-    animation: rolldown 2s ease-out;
-    animation-delay: 0;
-    animation-play-state: paused;
 
 }
    /* iPhone */
