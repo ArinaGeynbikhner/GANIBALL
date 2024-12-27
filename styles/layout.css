@@ -42,7 +42,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center; 
-    
+
 }
 
 .column_2 {
@@ -188,7 +188,7 @@ body {
       transform: scale(2); /* Возврат к исходному размеру */
     }
   }
-  
+
   .pulse {
     animation: pulse 1s infinite; /* Постоянная пульсация */
   }
@@ -426,10 +426,12 @@ body {
     z-index: 2; 
 }
 .img_spider {
+    width: 42%;
     width: 40%;
     position: absolute;
     top: 80%;
     left: 33%; 
+    z-index: 3; 
     z-index: 3;
     transition: transform 0.3s ease; 
 }
@@ -717,7 +719,7 @@ body {
     transform: translateY(0);
     transition: all 2s ease-out;
   }
-  
+
   @keyframes rolldown {
       0% {
         transform: translateY(0);

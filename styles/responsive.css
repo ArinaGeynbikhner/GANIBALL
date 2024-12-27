@@ -99,7 +99,6 @@
         position: relative;
         height: auto;
         width: 85%;
-        opacity: 0.5;
         z-index: 2; /* Нижний слой */
         display: flex;
         align-items: flex-start;
@@ -112,7 +111,6 @@
         position: relative;
         height: auto;
         width: 61%;
-        opacity: 0.5;
         z-index: 3;
         display: flex;
         align-items: flex-start;
@@ -139,6 +137,17 @@
     z-index: 3;
     display: inline-block;
     animation: shake 0.3s infinite;
+}
+.img_mask {
+    width: 41%;
+    top: 74.3%;
+    left: 41.5%;
+    position: absolute;
+    z-index: 3; 
+    animation: rolldown 2s ease-out;
+    animation-delay: 0;
+    animation-play-state: paused;
+
 }
    /* iPhone */
 
