@@ -68,27 +68,26 @@ body {
 .text_block_1 {
     height: 3vw;
     width: 100%;
-    /* margin-bottom: 5%; */
-    background-color: pink; opacity: 0.5;
-    overflow: hidden; /* Скрываем текст, выходящий за пределы */
-    white-space: nowrap; /* Запрещаем перенос строк */
-    box-sizing: border-box; /* Учет внутренних отступов */
-    color: rgba(223, 0, 6, 1); /* Цвет текста */
-    padding: 10px;
+    background-color: rgba(255, 126, 175, 1);
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    color: rgba(223, 0, 6, 1);
+    padding: 0.3%;
     font-size: 30px;
     font-family: Helvetica_bold;
 }
 .text_block_1-content {
-    display: inline-block; /* Для горизонтального перемещения */
+    display: inline-block;
     white-space: nowrap;
-    animation: marquee 10s linear infinite; /* Анимация перемещения */
+    animation: marquee 10s linear infinite;
 }
 @keyframes marquee {
     from {
-      transform: translateX(100%); /* Начинаем с правого края */
+      transform: translateX(100%);
     }
     to {
-      transform: translateX(-50%); /* Заканчиваем за левым краем */
+      transform: translateX(-50%);
     }
   }
 .worm_body_1 {
@@ -109,7 +108,7 @@ body {
     position: relative;
     height: auto;
     width: 83.2%;
-    z-index: 2; /* Нижний слой */
+    z-index: 2;
     display: flex;
     align-items: flex-start;
     margin-top: -1.8%;
@@ -182,15 +181,15 @@ body {
       transform: scale(2);
     }
     50% {
-      transform: scale(1.1); /* Увеличение объекта */
+      transform: scale(1.1);
     }
     100% {
-      transform: scale(2); /* Возврат к исходному размеру */
+      transform: scale(2);
     }
   }
 
   .pulse {
-    animation: pulse 1s infinite; /* Постоянная пульсация */
+    animation: pulse 1s infinite;
   }
 
 .img_face_foreground_1 {
@@ -201,10 +200,10 @@ body {
     z-index: 7;
 }
 .hover-scale {
-    transition: transform 0.3s ease; /* Плавность для всех элементов */
+    transition: transform 0.3s ease;
 }
 .hover-scale:hover {
-    transform: scale(1.2); /* Увеличение при наведении */
+    transform: scale(1.2);
 }
 .img_face_foreground_2 {
     width: 15%;
@@ -402,41 +401,75 @@ body {
     left: 57%;
     z-index: 3;   
 }
+
 .img_hands {
     width: 94%;
     position: absolute;
     top: 1.2%;
     left: 2.8%;
-    z-index: 1;
+    z-index: 1
+    opacity: 1;
+    transition: opacity 0.3s ease;
 }
 
+
+.img_hands2 {
+    width: 94%;
+    position: absolute;
+    top: 1.3%;
+    left: 2.8%;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.img_hands {
+    animation: fadeOutIn 4s infinite;
+    animation-delay: 0s;
+}
+
+
+.img_hands2 {
+    animation: fadeOutIn 4s infinite;
+    animation-delay: 2s;
+}
+
+
+@keyframes fadeOutIn {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
 .img_rat1 {
     width: 28%;
     position: absolute;
     top: 45.7%;
     left: 5%; 
-    z-index: 3; 
+    z-index: 4; 
 }
 .img_rat2 {
     width: 28%;
     position: absolute;
     top: 45.7%;
     left: 34%; 
-    z-index: 3; 
+    z-index: 4; 
 }
 .img_rat3 {
     width: 28%;
     position: absolute;
     top: 45.7%;
     left: 63%; 
-    z-index: 3; 
+    z-index: 4; 
 }
 .img_tonels {
     width: 88.3%;
     position: absolute;
     top: 43.9%;
     left: 4.8%; 
-    z-index: 2;
+    z-index: 3;
 }
 @keyframes runningText1 {
     0% {
@@ -553,11 +586,11 @@ body {
         opacity: 0;
     }
     33% {
-        left: 30%; /* Начало движения */
+        left: 30%;
         opacity: 1;
     }
     66% {
-        left: 65%; /* Промежуточное положение */
+        left: 65%;
         opacity: 0;
     }
     100% {
@@ -639,24 +672,24 @@ body {
     top: 63.4%;
     left: 27.5%; 
     z-index: 2;  
-    opacity: 0; /* Начальная непрозрачность */
+    opacity: 0;
     transition: opacity 0.5s ease; 
     animation: levitate 6s infinite ease-in-out;
 }
 @keyframes fadeInOut {
     0% {
-        opacity: 0; /* Прозрачность 0% */
+        opacity: 0;
     }
     50% {
-        opacity: 1; /* Прозрачность 100% (полностью видимое) */
+        opacity: 1;
     }
     100% {
-        opacity: 0; /* Прозрачность снова 0% */
+        opacity: 0;
     }
 }
 
 .img_closedeyes:hover ~ .img_twin_head {
-    animation: fadeInOut 5s infinite alternate; /* Применяем анимацию только при ховере */
+    animation: fadeInOut 5s infinite alternate;
 }
 .img_twin_head2 {
     width: 44.3%;
@@ -668,16 +701,16 @@ body {
 }
 @keyframes levitate {
     0% {
-        transform: translate(0, 0); /* Начальное положение */
+        transform: translate(0, 0);
     }
     25% {
-        transform: translate(0.7%, -0.7%); /* Верхний правый угол */
+        transform: translate(0.7%, -0.7%);
     }
     50% {
-        transform: translate(-0.7%, 0.7%); /* Верхний левый угол */
+        transform: translate(-0.7%, 0.7%);
     }
     100% {
-        transform: translate(0, 0); /* Возврат в начальную точку */
+        transform: translate(0, 0);
     }
 }
 .img_closedeyes {
@@ -737,26 +770,26 @@ body {
     transition: transform 0.3s ease; 
 }
 .img_spider:hover {
-    animation: wave-motion 5s ease-in-out infinite; /* Включение анимации при наведении */
+    animation: wave-motion 5s ease-in-out infinite;
   }
   @keyframes wave-motion {
     0% {
-      transform: translate(0, 0); /* Начальная точка */
+      transform: translate(0, 0);
     }
     20% {
-      transform: translate(-10%, 5%); /* Вверх и влево */
+      transform: translate(-10%, 5%);
     }
     40% {
-      transform: translate(-20%, 0); /* Крайняя левая точка */
+      transform: translate(-20%, 0);
     }
     60% {
-      transform: translate(-10%, -5%); /* Вверх и вправо */
+      transform: translate(-10%, -5%);
     }
     80% {
-      transform: translate(10%, 5%); /* Вниз и вправо */
+      transform: translate(10%, 5%);
     }
     100% {
-      transform: translate(0, 0); /* Возврат в начальную точку */
+      transform: translate(0, 0);
     }
   }
 .img_rats_2 {
@@ -773,15 +806,13 @@ body {
     width: 60%;
     z-index: 2; 
 }
-/* Стиль для картинки с языком */
+
 .img_mouth2 {
     position: absolute;
     top: 6.5%;
     right: 37.7%;
     width: 52.5%;
     z-index: 2;
-    
-    /* Постоянная анимация: вертикальная тряска */
     animation: shakeVertically 0.5s ease-in-out infinite;
 }
 
@@ -805,23 +836,23 @@ body {
         transform: translateY(0);
     }
     25% {
-        transform: translateY(-5px); /* Сдвиг вверх */
+        transform: translateY(-5px);
     }
     50% {
-        transform: translateY(5px);  /* Сдвиг вниз */
+        transform: translateY(5px);
     }
     75% {
-        transform: translateY(-5px); /* Сдвиг вверх */
+        transform: translateY(-5px);
     }
     100% {
-        transform: translateY(0);   /* Возвращаем в исходное положение */
+        transform: translateY(0);
     }
 }
 
-/* Анимация при ховере: запуск анимации сдвига по горизонтали */
+
 .img_mouth3:hover + .img_mouth2 {
-    animation: shakeVertically 0.5s ease-in-out infinite, tongueout 2s ease-out forwards; /* Запускаем обе анимации */
-    animation-play-state: running; /* Запускаем обе анимации при ховере */
+    animation: shakeVertically 0.5s ease-in-out infinite, tongueout 2s ease-out forwards; 
+    animation-play-state: running;
 }
 
 
@@ -1026,16 +1057,16 @@ body {
     z-index: 2; 
 }
 .hover-rotate {
-    transition: transform 0.3s ease; /* Плавность для всех элементов */
+    transition: transform 0.3s ease;
 }
 .hover-rotate:hover {
-    transform: rotate(360deg) scale(1.1); /* Увеличение при наведении */
+    transform: rotate(360deg) scale(1.1);
 }
 .worm_body_hand{
     position: relative;
     height: auto;
     width: 91%;
-    z-index: 2; /* Нижний слой */
+    z-index: 2;
     display: flex;
     align-items: flex-start;
 }
