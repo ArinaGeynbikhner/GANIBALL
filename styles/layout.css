@@ -89,7 +89,7 @@ body {
     color: rgba(223, 0, 6, 1);
     font-size: 3em;
     font-family: Helvetica_bold;
-    margin-right: 0.5%;
+    margin-right: 0.2%;
 }
 @keyframes line {
     0%{transform: translate(-10%,0);}
@@ -183,7 +183,7 @@ body {
     color: rgba(223, 0, 6, 1);
     font-size: 3em;
     font-family: Helvetica_bold;
-    margin-right: 1%;
+    margin-right: 0.5%;
 }
 @keyframes line2 {
     0%{transform: translate(-10%,0);}
