@@ -73,7 +73,6 @@ body {
     justify-content: space-around;
     height: 3em;
     padding: 0.5%;
-    width: 100%;
     background-color: rgba(255, 126, 175, 1);
     overflow: hidden;
 }
@@ -178,7 +177,7 @@ body {
     justify-content: space-around;
     padding: 0.3%;
     text-transform: uppercase;
-    animation: line2 4s infinite linear;
+    animation: line2 30s infinite linear;
 }
 .text_block_2-content {
     color: rgba(223, 0, 6, 1);
