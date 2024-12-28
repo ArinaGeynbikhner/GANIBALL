@@ -177,7 +177,7 @@ body {
     justify-content: space-around;
     padding: 0.3%;
     text-transform: uppercase;
-    animation: line2 30s infinite linear;
+    animation: line2 10s infinite linear;
 }
 .text_block_2-content {
     color: rgba(223, 0, 6, 1);
