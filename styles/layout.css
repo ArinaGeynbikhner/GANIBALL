@@ -84,11 +84,12 @@ body {
     align-items: center;
     justify-content: space-around;
     text-transform: uppercase;
+    font-size: 3em;
     animation: line 10s infinite linear;
 }
 .text_block_1-content {
     color: rgba(223, 0, 6, 1);
-    font-size: 3em;
+    font-size: 2em;
     font-family: Helvetica_bold;
     margin-right: 0.5%;
 }
@@ -177,12 +178,13 @@ body {
     align-items: center;
     justify-content: space-around;
     padding: 0.3%;
+    size: 3em;
     text-transform: uppercase;
     animation: line2 4s infinite linear;
 }
 .text_block_2-content {
     color: rgba(223, 0, 6, 1);
-    font-size: 3em;
+    font-size: 2em;
     font-family: Helvetica_bold;
     margin-right: 1%;
 }
