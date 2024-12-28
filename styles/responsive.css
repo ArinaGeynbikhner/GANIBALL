@@ -144,7 +144,7 @@
     justify-content: space-around;
     padding: 0%;
     text-transform: uppercase;
-    animation: line2 4s infinite linear;
+    animation: line2 30s infinite linear;
 }
 .text_block_2-content {
     font-size: 2em;
