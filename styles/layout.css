@@ -84,7 +84,7 @@ body {
     align-items: center;
     justify-content: space-around;
     text-transform: uppercase;
-    animation: line 10s infinite linear;
+    animation: line 30s infinite linear;
 }
 .text_block_1-content {
     color: rgba(223, 0, 6, 1);
